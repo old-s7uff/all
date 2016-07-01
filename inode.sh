@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update; apt-get upgrade -y
 apt-get install git libssl-dev openssl nano wget curl build-essential -y
-curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
 apt-get install nodejs -y
 npm cache clean -f
 npm install -g n
