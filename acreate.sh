@@ -2,5 +2,7 @@
 if [ "$1" ] 
 then
 mkdir $1
-mkdir test
+echo "bye"
+sleep 1
+rm -Rf ~/acreate.sh
 fi
