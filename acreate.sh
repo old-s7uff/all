@@ -1,4 +1,5 @@
 #!/bin/bash
+#testing.
 if [ "$1" ] 
 then
 mkdir $1
