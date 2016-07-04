@@ -12,4 +12,6 @@ service apache2 restart
 sudo php5enmod mcrypt 
 sudo a2enmod rewrite 
 service apache2 restart 
+sleep 3
+clear
 rm -Rf ~/iapache.sh
