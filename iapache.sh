@@ -14,4 +14,22 @@ sudo a2enmod rewrite
 service apache2 restart 
 sleep 3
 clear
+mkdir /hostdata/
+chmod -R 755 /hostdata/
+m='
+<Directory /hostdata/>
+         Options Indexes FollowSymLinks
+         AllowOverride None
+         Require all granted
+</Directory>
+'
+echo "$m" >> /etc/apache2/apache2.conf
+service apache2 restart
 rm -Rf ~/iapache.sh
+sleep 0.5
+clear
+echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo "U'r Vhost Folder Is /hostdata/"
+echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
