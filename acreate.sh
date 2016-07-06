@@ -1,5 +1,4 @@
 #!/bin/bash
-#testing.
 vf='/hostdata/'
 p='public_html'
 i='index.html'
