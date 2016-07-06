@@ -1,7 +1,7 @@
 #!/bin/bash
 #testing.
 vf='/hostdata/'
-p='public_hml'
+p='public_html'
 i='index.html'
 if [ "$1" ] 
 then
