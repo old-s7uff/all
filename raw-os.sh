@@ -40,6 +40,6 @@ sudo apt-get install vlc browser-plugin-vlc -y
 sed -i 's/geteuid/getppid/' /usr/bin/vlc
 apt-get install filezilla -y
 apt-get install leafpad -y
-apt-get install rar unrar zip unzip curl audacity youtube-dl id3v2 mplayer -y
+apt-get install zip unzip curl audacity youtube-dl id3v2 mplayer -y
 
 rm -Rf ~/work
