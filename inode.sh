@@ -12,5 +12,5 @@ echo -n "Creating A Symlink..."; sudo ln -sf /usr/local/n/versions/node/5.9.0/bi
 echo -n "Fixing Node Prefix..."; npm config set prefix /usr/local > /dev/null; echo "Done.";
 clear
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo "*-*-*-*-*--Node echo "`node -v`" Installed.--*-*-*-*-***-*-*"
+echo "*-*-*-*-*--Node "`node -v`" Installed.--*-*-*-*-***-*-**-*-*"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
