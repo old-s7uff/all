@@ -6,6 +6,7 @@ echo "*-*--For Any Problem Create An Github Issue--*-*-*-*-*-*-*-*-*-*-**"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo "*-*--If your System Is 32BIT Then Please PRESS CTRL+C--*-*-*-*-*-**"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo "Installation Will Start After 30 Sec!"
 sleep 30
 
 #a
