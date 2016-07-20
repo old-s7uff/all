@@ -1,8 +1,9 @@
 #!/bin/bash
-rm -Rf ~/.raws/raws
-cd ~/.raws/
-wget https://raw.githubusercontent.com/systemroot/raws/master/.raws/raws &>/dev/null
-chmod +x raws
+cd ~/
+rm -Rf .raws
+git clone https://github.com/systemroot/raws.git &>/dev/null
+mv raws/.raws ~/ && rm -Rf ~/raws
+chmod +x .raws/* .raws/.*
 clear
 echo " Update Is Complete !"
 rm -Rf ~/update.sh
