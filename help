@@ -16,11 +16,11 @@ echo "5. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install apache $(tput s
 
 echo "6. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install raw-os $(tput sgr0)"
 
-echo "6. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install Ogar-unlimited $(tput sgr0)"
-
 echo "7. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)update $(tput sgr0)"
 
 echo "8. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)help $(tput sgr0)"
+
+echo "9. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install Ogar-unlimited $(tput sgr0)"
 
 echo ""
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
@@ -44,7 +44,7 @@ echo "7. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)update $(tput sgr0) $(t
 
 echo "8. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)help $(tput sgr0) $(tput setaf 2)-------------------| Read This Page.$(tput sgr0)"
 
-echo "8. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install Ogar-unlimited $(tput sgr0) $(tput setaf 2)-| Ogar-Unlimited Privat Server$(tput sgr0)"
+echo "9. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install Ogar-unlimited $(tput sgr0) $(tput setaf 2)-| Ogar-Unlimited Privat Server$(tput sgr0)"
 
 echo ""
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
