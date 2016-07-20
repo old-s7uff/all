@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
-echo -n "Updating System..."; apt-get update && apt-get upgrade -y &>/dev/null; echo "Done.";
+echo -n "Updating System..."; apt-get update -y &>/dev/null; echo "Done.";
+echo -n "Upgrading System..."; apt-get upgrade -y &>/dev/null; echo "Done.";
 mkdir -p /home/game/ogar/
 cd /home/game/ogar/
 echo -n "Installing Git..."; apt-get install git -y &>/dev/null; echo "Done.";
@@ -8,11 +9,12 @@ echo -n "Downloading Ogar..."; git clone https://github.com/AJS-development/Ogar
 cd Ogar-unlimited/src/
 echo -n "Installing Ogar..."; npm install &>/dev/null; echo "Done.";
 sleep 5
-
+cd ~/
 cat <<EOF > ~/startogar.sh
 cd /home/game/ogar/Ogar-unlimited/src/
 node index.js
 EOF
+chmod +x ~/startogar.sh
 clear
 echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
