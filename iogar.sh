@@ -14,12 +14,13 @@ cd /home/game/ogar/Ogar-unlimited/src/
 node index.js
 EOF
 clear
-echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo ""
-echo -n "Ogar Is Installed."
-echo -n "To Start Server Use ./startogar.sh"
-echo -n "To edit files go at /home/game/ogar/Ogar-unlimited/"
-echo ""
-echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e ""
+echo -e "Installation Is Done."
+echo -e "To Start Server Execute $(tput setaf 1)$(tput bold)./startogar.sh$(tput sgr0)"
+echo -e "Game Folder : $(tput setaf 1)$(tput bold)/home/game/ogar/Ogar-unlimited$(tput sgr0)"
+echo -e ""
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+
