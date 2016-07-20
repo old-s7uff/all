@@ -12,7 +12,6 @@ echo -n "Downloading Ogar..."; git clone https://github.com/AJS-development/Ogar
 cd Ogar-unlimited/src/
 echo -n "Installing Ogar..."; npm install &>/dev/null; echo "Done.";
 sleep 5
-cd ~/
 cat <<EOF > ~/startogar.sh
 cd /home/game/ogar/Ogar-unlimited/src/
 node index.js
