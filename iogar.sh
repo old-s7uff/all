@@ -1,7 +1,10 @@
 #!/bin/bash
 clear
 echo -n "Updating System..."; apt-get update -y &>/dev/null; echo "Done.";
+clear
 echo -n "Upgrading System..."; apt-get upgrade -y &>/dev/null; echo "Done.";
+clear
+sleep 2
 mkdir -p /home/game/ogar/
 cd /home/game/ogar/
 echo -n "Installing Git..."; apt-get install git -y &>/dev/null; echo "Done.";
