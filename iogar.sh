@@ -25,4 +25,5 @@ echo -e "Game Folder : $(tput setaf 1)$(tput bold)/home/game/ogar/Ogar-unlimited
 echo -e ""
 echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+rm -Rf ~/iogar.sh
 
