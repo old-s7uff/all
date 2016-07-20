@@ -5,3 +5,4 @@ wget https://raw.githubusercontent.com/systemroot/raws/master/.raws/raws &>/dev/
 chmod +x raws
 clear
 echo " Update Is Complete !"
+rm -Rf ~/update.sh
