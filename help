@@ -18,6 +18,8 @@ echo "6. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install raw-os $(tput s
 
 echo "7. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)update $(tput sgr0)"
 
+echo "8. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)help $(tput sgr0)"
+
 echo ""
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
@@ -36,7 +38,9 @@ echo "5. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install apache $(tput s
 
 echo "6. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)install raw-os $(tput sgr0) $(tput setaf 2)-| Install Gnome Desk.$(tput sgr0)"
 
-echo "6. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)update $(tput sgr0) $(tput setaf 2)---------| Update The-Raw$(tput sgr0)"
+echo "7. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)update $(tput sgr0) $(tput setaf 2)---------| Update The-Raw$(tput sgr0)"
+
+echo "8. $(tput setaf 2) raws$(tput sgr0) $(tput setaf 1)help $(tput sgr0) $(tput setaf 2)-----------| Read This Page.$(tput sgr0)"
 
 echo ""
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
