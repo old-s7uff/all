@@ -44,11 +44,12 @@ clear
 rm -Rf ~/iapache.sh
 sleep 0.5
 clear
-echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo "U'r Vhost Folder Is /hostdata/"
-echo "Mysql User : root "
-echo "Mysql Passwd : root "
-echo "Phpmyadmin : yourdomain/mysql"
-echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
-echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "U'r Vhost Folder Is /hostdata/"
+echo -e "Mysql User : root "
+echo -e "Mysql Passwd : root "
+echo -e "Please Change Mysql Root Passwd"
+echo -e "Phpmyadmin : yourdomain/mysql"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
