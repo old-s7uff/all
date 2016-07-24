@@ -25,11 +25,30 @@ m='
 '
 echo "$m" >> /etc/apache2/apache2.conf
 service apache2 restart
+
+#Installing Mysql.
+cd ~/
+wget https://raw.githubusercontent.com/systemroot/all/master/mysql.sh
+chmod +x ~/mysql.sh
+sudo ./mysql.sh
+sleep 3
+clear
+
+#Installing PhpMyAdmin.
+cd ~/
+wget https://raw.githubusercontent.com/systemroot/all/master/sqladmin.sh
+chmod +x ~/sqladmin.sh
+sudo ./sqladmin.sh
+sleep 3
+clear
 rm -Rf ~/iapache.sh
 sleep 0.5
 clear
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo "U'r Vhost Folder Is /hostdata/"
+echo "Mysql User : root "
+echo "Mysql Passwd : root "
+echo "Phpmyadmin : yourdomain/mysql"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 echo "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
