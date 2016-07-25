@@ -1,5 +1,5 @@
 #!/bin/bash
-vf='/hostdata/'
+vf='/hostdata'
 p='public_html'
 i='index.html'
 if [ "$1" ] 
