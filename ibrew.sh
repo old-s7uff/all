@@ -27,3 +27,6 @@ export LD_LIBRARY_PATH=$LINUXBREWHOME/lib64:$LINUXBREWHOME/lib:$LD_LIBRARY_PATH
 
 which brew
 echo $PKG_CONFIG_PATH
+
+#GodBye.
+rm -Rf ~/ibrew.sh
