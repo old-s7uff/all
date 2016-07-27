@@ -19,3 +19,4 @@ clear
 /etc/init.d/mysql start
 sleep 2
 clear
+rm -Rf ~/mysql.sh
