@@ -25,3 +25,4 @@ clear
 service apache2 reload
 sleep 2
 clear
+rm -Rf ~/sqladmin.sh
