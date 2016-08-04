@@ -13,6 +13,7 @@ then
    
 #Ubuntu
 elif [ "`lsb_release -is`" == "Ubuntu" ]
+then
     mkdir -p /servers/cs
     ds='/servers/cs'
     cd $ds
