@@ -14,6 +14,7 @@ then
 elif [ "`lsb_release -is`" == "Ubuntu" ] || [ "`lsb_release -is`" == "Debian" ]
 #Ubuntu
 then
+    apt-get install ia32-libs -y
     mkdir -p /servers/cs
     ds='/servers/cs'
     cd $ds
