@@ -10,3 +10,6 @@ then
    rm -Rf public.zip
    chmod +x hlds_run
 fi
+else
+    echo "Your System Isn't Supported Sorry."
+fi
