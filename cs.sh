@@ -11,7 +11,7 @@ then
    rm -Rf public.zip
    chmod +x hlds_run
    
-elif [ "`lsb_release -is`" == "Ubuntu" ]
+elif [ "`lsb_release -is`" == "Ubuntu" ] || [ "`lsb_release -is`" == "Debian" ]
 #Ubuntu
 then
     mkdir -p /servers/cs
