@@ -1,7 +1,6 @@
 #!/bin/bash
-echo -n "Updating System..."; apt-get update -y  &>/dev/null; echo "Done.";
-echo -n "Upgrading System..."; apt-get upgrade -y  &>/dev/null; echo "Done.";
-echo -n "Installing Apache..."; apt-get install apache2 -y   &>/dev/null; echo "Done.";
+apt-get update; apt-get upgrade -y
+apt-get install apache2 -y
 service apache2 start
 apt-get install php5 -y
 service apache2 restart
