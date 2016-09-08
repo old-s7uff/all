@@ -5,7 +5,13 @@ sudo apt-get update; sudo apt-get upgrade -y
 sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
   libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
   libxcb-xfixes0-dev pkg-config texinfo zlib1g-dev
-  
+
+sudo apt-get -y install libwxgtk2.8-0 libwxgtk2.8-dev libsndfile1-dev \
+libsoxr-dev libexpat1-dev libgtk2.0-dev libasound2-dev libmad0-dev \
+libportaudio-dev libflac++-dev libid3tag0-dev libsbsms-dev libsoundtouch-dev \
+libtwolame-dev libportaudio-dev libmp3lame-dev libid3tag0-dev libfaac-dev \
+libopencore-amrnb-dev libopencore-amrwb-dev
+
 mkdir ~/ffmpeg_sources
 #Yasm
 cd ~/ffmpeg_sources
@@ -90,6 +96,7 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
   --bindir="$HOME/bin" \
   --enable-gpl \
+  --enable-libfaac \
   --enable-libass \
   --enable-libfdk-aac \
   --enable-libfreetype \
@@ -100,6 +107,8 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
   --enable-libvpx \
   --enable-libx264 \
   --enable-libx265 \
+  --enable-shared \
+  --disable-static \
   --enable-nonfree
 PATH="$HOME/bin:$PATH" make
 make install
