@@ -1,5 +1,32 @@
 #!/bin/bash
 sudo apt-get update; sudo apt-get upgrade -y
+
+#Dep.
+sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
+  libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
+  libxcb-xfixes0-dev pkg-config texinfo zlib1g-dev
+  
+mkdir ~/ffmpeg_sources
+#Yasm
+cd ~/ffmpeg_sources
+wget http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+tar xzvf yasm-1.3.0.tar.gz
+cd yasm-1.3.0
+./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/bin"
+make
+make install
+make distclean
+
+#libx264
+cd ~/ffmpeg_sources
+wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
+tar xjvf last_x264.tar.bz2
+cd x264-snapshot*
+PATH="$HOME/bin:$PATH" ./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/bin" --enable-static --disable-opencl
+PATH="$HOME/bin:$PATH" make
+make install
+make distclean
+
 #libx265
 sudo apt-get install cmake mercurial -y
 cd ~/ffmpeg_sources
@@ -42,7 +69,6 @@ make install
 make clean
 
 #libvpx
-
 cd ~/ffmpeg_sources
 wget http://storage.googleapis.com/downloads.webmproject.org/releases/webm/libvpx-1.5.0.tar.bz2
 tar xjvf libvpx-1.5.0.tar.bz2
