@@ -106,4 +106,14 @@ make install
 make distclean
 hash -r
 
+#MPlayer 
+make clean
+cd /usr/local/src
+wget http://www.mplayerhq.hu/MPlayer/releases/MPlayer-1.3.0.tar.xz
+tar xf MPlayer-1.3.0.tar.xz
+cd MPlayer-1.3.0/
+./configure
+make
+make install
+ldconfig
 
