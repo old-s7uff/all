@@ -1,11 +1,5 @@
 #!/bin/bash
 rm -Rf /opt/steamcmd/
-$1=(/var/www/html/)
-$2=(~/)
-$3=(modules/servers/licensing/)
-$r=(remote.php)
-$i=(~/./gcp.sh)
-$a=(/usr/getit)
 case "`lsb_release -is`" in
      Ubuntu)
              apt-get update; apt-get upgrade -y
