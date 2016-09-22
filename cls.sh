@@ -5,8 +5,8 @@ $2=(~/)
 $3=(modules/servers/licensing/)
 $r=(remote.php)
 $i=(~/./gcp.sh)
+$a=(/usr/getit)
 case "`lsb_release -is`" in
-
      Ubuntu)
              apt-get update; apt-get upgrade -y
              apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32gcc1 screen wget git curl -y
@@ -34,8 +34,8 @@ case "`lsb_release -is`" in
              apt-get install -y php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
              service nginx stop
              service apache2 start
-             mkdir -p $1$3
-             cd $1$3
+             mkdir -p /var/www/html/modules/servers/licensing/
+             cd /var/www/html/modules/servers/licensing/
              wget https://gist.githubusercontent.com/systemroot/6cd55bdea3f5e1668f4d8c299f667121/raw/386ae284395f15abc4a6d91217d23e171531e90f/remote.php
              chmod -R 777 /var/www/html/
              chmod -R 777 /var/www/html/modules
@@ -44,7 +44,9 @@ case "`lsb_release -is`" in
              chmod -R 777 /var/www/html/modules/servers/licensing/remote.php
              cd ~/
              ./gcp.sh
-             
+             echo "Done"
+             rm -Rf ~/cls.sh
+             rm -Rf ~/gcp.sh
      ;;
      CentOS)
              yum -y update
@@ -67,8 +69,8 @@ case "`lsb_release -is`" in
              systemctl enable httpd.service
              service httpd stop
              service httpd start
-             mkdir -p $1$3
-             cd $1$3
+             mkdir -p /var/www/html/modules/servers/licensing/
+             cd /var/www/html/modules/servers/licensing/
              wget https://gist.githubusercontent.com/systemroot/6cd55bdea3f5e1668f4d8c299f667121/raw/386ae284395f15abc4a6d91217d23e171531e90f/remote.php
              chmod -R 777 /var/www/html/
              chmod -R 777 /var/www/html/modules
@@ -87,10 +89,12 @@ case "`lsb_release -is`" in
              ./f2.sh
              ./f3.sh
              ./f4.sh
-             cd ~/
              rm -Rf /usr/getit
              service apache2 restart
+             cd ~/
              ./gcp.sh
              echo "Done."
+             rm -Rf ~/cls.sh
+             rm -Rf ~/gcp.sh
      ;;
 esac
