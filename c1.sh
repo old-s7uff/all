@@ -3,7 +3,7 @@ rm -Rf /opt/steamcmd/
 case "`lsb_release -is`" in
      Ubuntu)
              apt-get update; apt-get upgrade -y
-             apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32gcc1 screen wget git curl -y
+             apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32gcc1 proftpd screen wget git curl -y
              apt-get install ia32-libs -y
              cd /opt
              mkdir steamcmd && cd steamcmd/
@@ -47,7 +47,7 @@ case "`lsb_release -is`" in
              yum -y update
              yum -y upgrade
              yum -y install epel-release
-             yum -y install glibc libstdc++ screen nano wget curl
+             yum -y install glibc libstdc++ screen proftpd nano wget curl
              yum -y install glibc.i686 libgcc.x86_64
              cd /opt
              mkdir steamcmd
