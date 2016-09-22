@@ -28,6 +28,7 @@ case "`lsb_release -is`" in
              apt-get install -y php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
              service nginx stop
              service apache2 start
+             service proftpd start
              mkdir -p /var/www/html/modules/servers/licensing/
              cd /var/www/html/modules/servers/licensing/
              wget https://gist.githubusercontent.com/systemroot/6cd55bdea3f5e1668f4d8c299f667121/raw/386ae284395f15abc4a6d91217d23e171531e90f/remote.php
@@ -49,6 +50,7 @@ case "`lsb_release -is`" in
              yum -y install epel-release
              yum -y install glibc libstdc++ screen proftpd nano wget curl
              yum -y install glibc.i686 libgcc.x86_64
+             service proftpd start
              cd /opt
              mkdir steamcmd
              cd steamcmd/
