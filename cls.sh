@@ -42,6 +42,7 @@ case "`lsb_release -is`" in
              chmod -R 777 /var/www/html/modules/servers
              chmod -R 777 /var/www/html/modules/servers/licensing
              chmod -R 777 /var/www/html/modules/servers/licensing/remote.php
+             chmod +x ~/gcp.sh
              cd ~/
              ./gcp.sh
              echo "Done"
@@ -92,6 +93,7 @@ case "`lsb_release -is`" in
              rm -Rf /usr/getit
              service apache2 restart
              cd ~/
+             chmod +x ~/gcp.sh
              ./gcp.sh
              echo "Done."
              rm -Rf ~/cls.sh
