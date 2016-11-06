@@ -15,6 +15,7 @@ elif [ "`lsb_release -is`" == "Ubuntu" ] || [ "`lsb_release -is`" == "Debian" ]
 #Ubuntu
 then
     apt-get install ia32-libs -y
+    apt-get install lib32ncurses5 lib32z1 -y
     apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 -y
     mkdir -p /servers/cs
     ds='/servers/cs'
