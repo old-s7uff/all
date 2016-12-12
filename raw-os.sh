@@ -18,7 +18,7 @@ sudo apt-get install gnome-desktop-environment -y
 sudo apt-get install gnome-system-tools -y
 apt-get install synaptic -y
 apt-get install gparted -y
-apt-get install libnotify-bin -y
+
 #themes and apps.
 mkdir ~/work
 cd ~/work
