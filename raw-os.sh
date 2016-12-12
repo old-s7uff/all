@@ -22,7 +22,7 @@ apt-get install libnotify-bin -y
 #themes and apps.
 mkdir ~/work
 cd ~/work
-wget https://github.com/adobe/brackets/releases/download/release-1.7/Brackets.Release.1.7.64-bit.deb
+wget https://github.com/adobe/brackets/releases/download/release-1.8/Brackets.Release.1.8.64-bit.deb
 dpkg -i Brackets.Release.1.7.64-bit.deb
 sudo add-apt-repository ppa:noobslab/themes -y
 sudo add-apt-repository ppa:upubuntu-com/icons -y
