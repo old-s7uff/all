@@ -23,7 +23,7 @@ apt-get install gparted -y
 mkdir ~/work
 cd ~/work
 wget https://github.com/adobe/brackets/releases/download/release-1.8/Brackets.Release.1.8.64-bit.deb
-dpkg -i Brackets.Release.1.7.64-bit.deb
+dpkg -i Brackets.Release.1.8.64-bit.deb
 sudo add-apt-repository ppa:noobslab/themes -y
 sudo add-apt-repository ppa:upubuntu-com/icons -y
 sudo apt-get update -y
@@ -42,5 +42,11 @@ sed -i 's/geteuid/getppid/' /usr/bin/vlc
 apt-get install filezilla -y
 apt-get install leafpad -y
 apt-get install zip unzip curl audacity youtube-dl id3v2 mplayer -y
-
 rm -Rf ~/work
+mkdir -p /tmp
+cd /tmp
+wget rarlab.com/rar/rarlinux-x64-5.1.1.tar.gz
+tar -xzvf rarlinux-x64-5.1.1.tar.gz
+cd rar
+make
+sudo make install
