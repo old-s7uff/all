@@ -42,6 +42,10 @@ sed -i 's/geteuid/getppid/' /usr/bin/vlc
 apt-get install filezilla -y
 apt-get install leafpad -y
 apt-get install zip unzip curl audacity youtube-dl id3v2 mplayer -y
+cd ~/work
+wget https://raw.githubusercontent.com/systemroot/personal-files/master/s.sh
+chmod +x s.sh
+sh s.sh
 rm -Rf ~/work
 mkdir -p /tmp
 cd /tmp
