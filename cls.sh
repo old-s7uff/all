@@ -85,7 +85,7 @@ case "`lsb_release -is`" in
              ./f3.sh
              ./f4.sh
              rm -Rf /usr/getit
-             service apache2 restart
+             service httpd restart
              cd ~/
              chmod +x ~/gcp.sh
              ./gcp.sh
