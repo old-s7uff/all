@@ -48,7 +48,7 @@ case "`lsb_release -is`" in
              yum -y upgrade
              yum -y install epel-release
              yum -y install glibc libstdc++ screen nano wget curl
-             yum -y install glibc.i686 libgcc.x86_64
+             yum -y install glibc.i686 libgcc.x86_64 libgcc_s.so.1
              cd /opt
              mkdir steamcmd
              cd steamcmd/
