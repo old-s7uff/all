@@ -13,6 +13,9 @@ sleep 30
 apt-get update -y
 apt-get upgrade -y
 apt-get dist-upgrade -y
+apt-get install -y build-essential git nano curl wget libssl-dev -y
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging -y
+sudo apt-get update -y; apt-get dist-upgrade -y
 sudo apt-get install gnome-core -y
 sudo apt-get install gnome-desktop-environment -y
 sudo apt-get install gnome-system-tools -y
