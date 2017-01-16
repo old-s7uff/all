@@ -2,16 +2,20 @@
 if [ "`lsb_release -is`" == "CentOS" ]
 #CentOS
 then
-   yum update; yum upgrade
+   yum update -y; yum upgrade -y
    yum install libssl-dev epel-release -y
+   yum -y install glibc libstdc++
+   yum -y install libgcc.x86_64 libgcc_s.so.1
    mkdir -p /servers/cs
    yum -y install glibc.i686 screen nano unzip ld-linux.so.2 ncompress
    ds='/servers/cs'
    cd $ds
-   wget http://cloud.dope-us.com/public.zip
-   unzip public.zip
-   rm -Rf public.zip
+   wget http://193.70.16.250/cs.zip
+   unzip cs.zip
+   rm -Rf cs.zip
    chmod +x hlds_run
+   echo "Work Done"
+   echo "Game Dir, /servers/cs/"
    
 elif [ "`lsb_release -is`" == "Ubuntu" ] || [ "`lsb_release -is`" == "Debian" ]
 #Ubuntu
