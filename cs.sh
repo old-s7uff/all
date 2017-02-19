@@ -8,6 +8,7 @@ then
    yum -y install libgcc.x86_64 libgcc_s.so.1
    mkdir -p /servers/cs
    yum -y install glibc.i686 screen nano unzip ld-linux.so.2 ncompress
+   yum -y install glibc.i686
    ds='/servers/cs'
    cd $ds
    wget http://193.70.16.250/cs.zip
