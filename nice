@@ -1,0 +1,9 @@
+#!/bin/bash
+apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get install git zip unzip nano wget curl -y
+apt-get autoremove -y
+sudo apt-get install build-essential libcurl4-openssl-dev git automake libtool libjansson* libncurses5-dev libssl-dev -y
+git clone --recursive https://github.com/tpruvot/cpuminer-multi.git
+cd cpuminer-multi/
+./autogen.sh
+./configure CFLAGS="-march=native" --with-crypto --with-curl
+make
