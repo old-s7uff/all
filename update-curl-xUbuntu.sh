@@ -9,8 +9,6 @@ make
 sudo make install
 sudo ldconfig
 
-# i know. you will still have old curl so
+
 apt-get remove curl -y
 cp /usr/local/bin/curl /bin/curl
-
-#Now 'sudo -i' and 'curl -V'
